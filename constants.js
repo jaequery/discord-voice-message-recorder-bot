@@ -11,7 +11,7 @@ const config = Hjson.parse(fs.readFileSync(path.resolve(__dirname, "./config.hjs
 const {token} = config;
 
 /* Default bot prefix */
-const defaultPrefix = "v!";
+const defaultPrefix = "!v ";
 
 /* Discord Client */
 const client = new Discord.Client();
@@ -35,7 +35,7 @@ const audioStreamPerGuild = {};
 	}
 */
 
-/* Object that contains every guild's temporary voice channel, made by the bot, for the command v!voicemessage. Also, it contains the text channel where the command was used. When the voice channel doesn't exist, the guild object is resetted. */
+/* Object that contains every guild's temporary voice channel, made by the bot, for the command !v record. Also, it contains the text channel where the command was used. When the voice channel doesn't exist, the guild object is resetted. */
 const voiceChannelPerGuild = {};
 /*
 	voiceChannelPerGuild = {

@@ -2,7 +2,6 @@ const constants = require('./constants.js');
 const client = constants.client;
 const token = constants.token;
 
-console.log('token', token);
 /* Imports all commands */
 require('./commands/commandsMain.js');
 /* Imports all events */
@@ -25,7 +24,7 @@ _    _                 __  __    __      __   _                 ____        _
     /* Sets bot's presence */
     client.user.setPresence({
         activity: {
-            name: 'v!help',
+            name: '!v help',
             type: 'STREAMING'
         },
         status: 'online',

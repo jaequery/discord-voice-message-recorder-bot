@@ -125,7 +125,7 @@ function alreadyRecording(user) {
 function notRecording(user) {
     return new MessageEmbed()
         .setTitle(`Currently not recording!`)
-        .setDescription(`It's impossible to stop recording because I'm not recording anything(with \`v!record\`, at least).`)
+        .setDescription(`It's impossible to stop recording because I'm not recording anything(with \`!v record\`, at least).`)
         .setColor(0xf45042)
         .setAuthor(`${client.user.username}#${client.user.discriminator}`, client.user.displayAvatarURL())
         .setThumbnail(user.displayAvatarURL())
